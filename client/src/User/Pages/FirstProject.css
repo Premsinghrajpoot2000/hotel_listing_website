@@ -1,0 +1,233 @@
+.Hero {
+    background-color: black;
+    aspect-ratio: 10/4;
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.Hero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.userInfoHero {
+    display: flex;
+    align-items: center;
+}
+
+.like1 {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1vw;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    padding: 5px 10px;
+}
+
+.premsingh1 {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.like1:hover {
+    background-color: white;
+    color: black;
+}
+
+.like1.disabled {
+    background-color: rgb(231, 231, 231);
+    color: rgb(77, 77, 77);
+    border: 1px solid white;
+}
+
+.like1.disabled:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(77, 77, 77);
+}
+
+.userHero {
+    width: 32%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(68, 68, 68, 0.377);
+    backdrop-filter: blur(100px);
+    bottom: 10px;
+    left: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.userHero:hover {
+    transform: scale(1.04, 1.04);
+}
+
+.userImageHero {
+    width: 5vw;
+    aspect-ratio: 16/16;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.userImageHero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.projectShort div:nth-child(1) {
+    font-size: 2vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.projectShort div:nth-child(2) {
+    font-size: 1.5vw;
+    color: rgb(201, 198, 198);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.userNameHero {
+    width: 250%;
+}
+
+.userNameHero p:nth-child(1) {
+    margin-bottom: 0;
+    font-size: 1.5vw;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.userNameHero p:nth-child(2) {
+    margin-bottom: 0;
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: rgb(216, 213, 213);
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.Hero a {
+    text-decoration: none;
+    color: rgb(216, 213, 213);
+    ;
+}
+
+@media (max-width: 768px) {
+    .userImageHero {
+        width: 5.5vw;
+    }
+
+    .userNameHero p:nth-child(1) {
+        font-size: 2vw;
+    }
+
+    .userNameHero p:nth-child(2) {
+        font-size: 1.8vw;
+    }
+
+    .userHero {
+        width: 40%;
+    }
+
+    .projectShort div:nth-child(1) {
+        font-size: 2.5vw;
+    }
+
+    .projectShort div:nth-child(2) {
+        font-size: 2vw;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .userImageHero {
+        width: 7.5vw;
+    }
+
+    .userNameHero p:nth-child(1) {
+        font-size: 3vw;
+    }
+
+    .userNameHero p:nth-child(2) {
+        font-size: 2.5vw;
+    }
+
+    .userHero {
+        width: 50%;
+    }
+
+    .projectShort div:nth-child(1) {
+        font-size: 3.5vw;
+    }
+
+    .projectShort div:nth-child(2) {
+        font-size: 2.5vw;
+    }
+
+    .Hero {
+        aspect-ratio: 10/7;
+    }
+
+    .like1 {
+        font-size: 3vw;
+        top: 5px;
+        padding: 2px 5px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .userImageHero {
+        width: 10vw;
+    }
+
+    .userNameHero p:nth-child(1) {
+        font-size: 3.5vw;
+    }
+
+    .userNameHero p:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .userHero {
+        width: 52%;
+    }
+
+    .projectShort div:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .projectShort div:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .Hero {
+        aspect-ratio: 10/8;
+    }
+
+    .like1 {
+        font-size: 4vw;
+        top: 5px;
+        padding: 2px 5px;
+    }
+
+}

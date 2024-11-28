@@ -1,0 +1,70 @@
+steps of cloudinary:
+
+step 1 : installing packages:
+
+    1. npm i cloudinary //database where we'll store our files 
+    2. npm i multer //so we can accept files using req.file
+    3. npm i datauri //file ko url me covert krne ka kam karta hai
+
+    import cloudinary from "cloudinary"
+    import multer from "multer"
+    import DataUriParser from "datauri/parser.js"
+
+step 2 : setting up multer
+
+    const storage = multer.memoryStorage();
+    const singleUpload = multer({storage}).single("file")
+
+//singleUpload is a middleware
+
+step 3 : cloudinary setup karna
+
+cloudinary.v2.config({
+    cloud_name : "",
+    api_key : "",
+    api_secret : ""
+})
+
+
+
+step 4 : datauri function banana
+
+const getDataUri = (file) => {
+    const parser = new DataUriParser();
+    const extName = path.extName(file.originalname).toString();
+    return parser.format(extName, file.buffer)
+}
+
+step 5 : creating schema 
+
+    name : String,
+    moNumber : Number,
+    image : {
+        public_id: String,
+        url : String
+    }
+
+step 6 : Router banana
+
+const createProjectController = async(req, res) =>{
+
+    const {name , moNumber} = req.body
+    const file = req.file
+
+    const getUrl = getDataUri(file)
+
+    const myCloud = await cloudinary.v2.uploader.upload(getUrl.content)
+
+    await Usermodel.create({
+        name, moNumber, image:{
+            public_id : myCloud.public_id,
+            url : myCloud.secure_url
+        }
+    })    
+    return res.json({
+        success : true,
+        message : "data has created successfully"
+    })
+}
+
+app.post("/projectcreate", singleUpload, createProjectController )

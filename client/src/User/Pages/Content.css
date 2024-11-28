@@ -1,0 +1,96 @@
+.contentDivParant {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contentDiv {
+    overflow-x: scroll;
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.contentDiv::-webkit-scrollbar {
+    width: 0px;
+}
+
+.leftContent {
+    display: none;
+}
+
+.leftContentShow {
+    box-shadow: 0 0 5px black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    position: absolute;
+    left: 10px;
+    bottom: 42%;
+    background-color: rgb(233, 233, 233);
+    z-index: 1;
+}
+
+.leftContentShow:hover {
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+}
+
+
+.rightContent {
+    display: none;
+}
+
+.rightContentShow {
+    box-shadow: 0 0 5px black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    bottom: 42%;
+    font-size: 35px;
+    background-color: rgb(233, 233, 233);
+    z-index: 0;
+}
+
+.rightContentShow:hover {
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+}
+
+#allpost {
+    display: flex;
+    justify-content: center;
+}
+
+#allpost a {
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+@media (max-width: 964px) {
+    .contentDiv {
+        white-space: wrap;
+    }
+}
+
+@media (max-width: 964px) {
+
+    #leftButton,
+    #rightButton,
+    .leftContentShow,
+    .rightContentShow,
+    .rightContent,
+    .leftContent {
+        display: none;
+    }
+}

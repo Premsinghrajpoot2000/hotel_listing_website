@@ -1,0 +1,125 @@
+.footerDiv {
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.about {
+    display: flex;
+}
+
+.FooterDivP {
+    white-space: nowrap;
+}
+
+.about .hr {
+    border-bottom: 1px solid rgb(167, 167, 167);
+    width: 45%;
+    margin: auto;
+}
+
+.aboutEnd .hr {
+    border-bottom: 1px solid rgb(167, 167, 167);
+    width: 99.5%;
+    margin: auto;
+}
+
+.about div:nth-child(2) {
+    color: rgb(226, 224, 224);
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.footerUserInfo {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.footerUserInfo div:nth-child(1) {
+    width: 150px;
+    height: 150px;
+}
+
+.footerUserInfo div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footerUserInfo div:nth-child(2) {
+    margin-left: 20px;
+}
+
+.footerUserInfo div:nth-child(2) p:nth-child(1) {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.footerUserInfo div:nth-child(2) p:nth-child(2) {
+    font-size: 20px;
+}
+
+.expYrs {
+    color: rgb(255, 97, 97);
+}
+
+@media (max-width: 964px) {
+    .footerUserInfo div:nth-child(1) {
+        width: 12vw;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .footerUserInfo div:nth-child(2) p:nth-child(1) {
+        font-size: 2.2rem;
+    }
+
+    .footerUserInfo div:nth-child(2) p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 847px) {
+    .footerUserInfo div:nth-child(2) p:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .footerUserInfo div:nth-child(2) p:nth-child(2) {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 626px) {
+    .footerUserInfo div:nth-child(2) p:nth-child(1) {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+
+    .footerUserInfo div:nth-child(2) p:nth-child(2) {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .footerUserInfo div:nth-child(1) {
+        width: 17vw;
+    }
+
+    .footerUserInfo div:nth-child(2) p:nth-child(2) {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 331px) {
+    .footerUserInfo div:nth-child(1) {
+        width: 20vw;
+    }
+}

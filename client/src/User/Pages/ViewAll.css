@@ -1,0 +1,357 @@
+.AllforGrid {
+    margin: auto;
+    max-width: 1150px;
+}
+
+.AllContentItemsDiv {
+    border-radius: 10px;
+    width: 340px;
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    transform: scale(1, 1);
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.AllContentItemsDiv:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.AllUserInfo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.AllUserImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+}
+
+.AllUserImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.AllUserName {
+    margin-left: 10px;
+    width: 57%;
+}
+
+.AllUserName div:nth-child(1) {
+    margin-bottom: 0;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.AllUserName div:nth-child(2) {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.AllLike {
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    padding: 2px 5px;
+}
+
+.AllLike.disabled {
+    background-color: rgb(231, 231, 231);
+    color: rgb(77, 77, 77);
+    border: 1px solid white;
+}
+
+.AllLike:disabled {
+    background-color: rgb(231, 231, 231);
+    color: rgb(77, 77, 77);
+    border: 1px solid white;
+}
+
+.AllLike.disabled:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(77, 77, 77);
+}
+
+.AllLike:disabled:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(77, 77, 77);
+}
+
+.AllLike div {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.AllLike:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.AllImage {
+    height: 191px;
+    margin: 5px;
+}
+
+.AllImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#paginationDiv {
+    display: flex;
+    align-items: center;
+}
+
+#paginationMainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#paginationDiv span {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.pagination_Div_Btn {
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.paginationDivMouseDown {
+    border: 3px solid rgb(255, 254, 254);
+    color: black;
+}
+
+.paginationDiv_disabled {
+    visibility: hidden;
+}
+
+.pagination_Div_Btn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1140px) {
+    .AllforGrid {
+        width: 765px;
+        position: relative;
+        left: -2.5%;
+    }
+
+    .AllLike,
+    .AllLike div {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .AllforGrid {
+        width: 765px;
+        position: relative;
+        left: auto;
+        margin: auto;
+    }
+
+    .AllUserAllImage {
+        width: 7vw;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .AllUserName {
+        width: 45%;
+    }
+
+    .AllImage {
+        height: auto;
+    }
+
+    .AllImage img {
+        width: 41.7vw;
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+
+    .AllContentItemsDiv {
+        width: 90%;
+
+    }
+
+    .AllContentItemsDiv {
+        margin: 10px auto;
+    }
+
+    .AllforGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 48vw);
+    }
+}
+
+@media (max-width: 754px) {
+
+    .AllforGrid {
+        width: 700px;
+        position: relative;
+        left: auto;
+        margin: auto;
+    }
+
+    .AllImage img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+
+    .AllUserAllImage {
+        width: 400px;
+    }
+
+    .AllUserName div:nth-child(1) {
+        font-size: 0.8rem;
+    }
+
+    .AllUserName div:nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+    .AllLike,
+    .AllLike div {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 685px) {
+    .AllforGrid {
+        width: auto;
+        position: relative;
+        left: auto;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 577px) {
+
+    .AllLike,
+    .AllLike div {
+        font-size: 0.8rem;
+        padding: 1px 2px;
+    }
+
+    .AllUserAllImage {
+        width: 6vw;
+    }
+}
+
+@media (max-width: 495px) {
+    .AllUserAllImage {
+        width: 10vw;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .AllUserName {
+        width: 50%;
+    }
+
+    .AllUserName div:nth-child(1) {
+        font-size: 1.3rem;
+    }
+
+    .AllUserName div:nth-child(2) {
+        font-size: 0.9rem;
+    }
+
+    .AllLike,
+    .AllLike div {
+        font-size: 1.5rem;
+    }
+
+    .AllImage img {
+        width: 83vw;
+    }
+
+    .AllforGrid {
+        grid-template-columns: repeat(1, 95vw);
+    }
+}
+
+@media (max-width: 410px) {
+    .AllUserName div:nth-child(1) {
+        font-size: 0.9rem;
+    }
+
+    .AllUserName div:nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+    .AllLike,
+    .AllLike div {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .MenuBarUl {
+        margin-top: 0px;
+    }
+
+    .AllUserName {
+        width: 45%;
+    }
+
+    .AllContentItemsDiv {
+        width: 90%;
+    }
+
+    .AllLike,
+    .AllLike div {
+        font-size: 1rem;
+    }
+
+    .AllLike {
+        right: 1px;
+        top: 1px;
+    }
+
+    .AllUserName div:nth-child(1) {
+        font-size: 0.9rem;
+    }
+
+    .AllUserName div:nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+    .AllforGrid {
+        grid-template-columns: repeat(1, 93vw);
+    }
+
+    .AllImage img {
+        width: 81vw;
+    }
+
+}

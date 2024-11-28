@@ -1,0 +1,219 @@
+.projectDetailUserInfo {
+    background-color: rgb(253, 246, 238);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ProjectDetailsPageInfo {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.ProjectDetailsPageInfo h1 {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.ProjectDetailsPageInfo p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.ProjectDetailsImage {
+    border-radius: 10px;
+    width: 40vw;
+    float: left;
+    margin-right: 10px;
+}
+
+.ProjectDetailsImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ProjectDetailslike {
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.ProjectDetailslike div {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.ProjectDetailsUserImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin: 5px 0 0 5px;
+}
+
+.ProjectDetailsUserImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.ProjectDetailsUserName {
+    margin-left: 10px;
+    width: 57%;
+}
+
+.ProjectDetailsUserName p:nth-child(1) {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProjectDetailsUserName p:nth-child(2) {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: rgb(131, 131, 131);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1100px) {
+    .ProjectDetailsUserName p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .ProjectDetailsUserName p:nth-child(2) {
+        font-size: 0.9rem;
+    }
+
+    .ProjectDetailslike,
+    .ProjectDetailslike div {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 964px) {
+    .ProjectDetailsUserImage {
+        width: 7vw;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .ProjectDetailsUserName {
+        width: 45%;
+    }
+}
+
+@media (max-width: 706px) {
+
+    .ProjectDetailsUserName div:nth-child(1) {
+        font-size: 0.8rem;
+    }
+
+    .ProjectDetailsUserName div:nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+    .ProjectDetailsPageInfo h1 {
+        font-size: 2rem;
+    }
+
+    .ProjectDetailslike,
+    .ProjectDetailslike div {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 626px) {
+
+    .ProjectDetailsUserImage {
+        width: 8vw;
+    }
+
+    
+    .ProjectDetailsPageInfo h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 577px) {
+
+    .ProjectDetailslike,
+    .ProjectDetailslike div {
+        font-size: 0.8rem;
+        padding: 1px 2px;
+    }
+}
+
+@media (max-width: 495px) {
+    .ProjectDetailsUserImage {
+        width: 10vw;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .ProjectDetailsUserName div:nth-child(1) {
+        font-size: 1.3rem;
+    }
+
+    .ProjectDetailsUserName div:nth-child(2) {
+        font-size: 0.9rem;
+    }
+
+    .ProjectDetailslike,
+    .ProjectDetailslike div {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .ProjectDetailsUserName div:nth-child(1) {
+        font-size: 0.9rem;
+    }
+
+    .ProjectDetailsUserName div:nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+    .ProjectDetailsPageInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .ProjectDetailslike,
+    .ProjectDetailslike div {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .ProjectDetailslike,
+    .ProjectDetailslike div {
+        font-size: 1rem;
+    }
+
+    .ProjectDetailsUserName div:nth-child(1) {
+        font-size: 0.9rem;
+    }
+
+    
+    .ProjectDetailsPageInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .ProjectDetailsUserName div:nth-child(2) {
+        font-size: 0.5rem;
+    }
+
+}

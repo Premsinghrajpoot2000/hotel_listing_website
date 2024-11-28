@@ -1,0 +1,413 @@
+.addProjectsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.addProjectsDiv form {
+    background-color: white;
+    padding: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.addProjectsDiv legend {
+    border-bottom: 1px solid black;
+}
+
+
+.addProjectsDiv table tr td {
+    padding: 10px;
+}
+
+.addProjectsDiv table tr td input {
+    width: 100%;
+}
+
+.adminButtonFirst {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.adminBTN1,
+.adminBTN2 {
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.adminBTN1:hover,
+.adminBTN2:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.adminButtonClicked {
+    transform: scale(0.99, 0.99);
+    box-shadow: 0 0 0 2px black inset;
+}
+
+.AddProjectRelative {
+    position: relative;
+}
+
+.AddProjectLoadingDiv {
+    display: none;
+}
+
+.AddProjectLoading {
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 100vh;
+    width: 80%;
+    position: fixed;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addContentUpdateDiv {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.addContentTop {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.addContentTop div:nth-child(1) {
+    background-color: rgb(195, 0, 255);
+    border-radius: 20px 0 0 0;
+    padding: 10px 30px;
+    font-size: 50px;
+}
+
+.addContentTop div:nth-child(2) {
+    background-color: aqua;
+    font-size: 25px;
+    border-radius: 0 20px 0 0;
+    padding: 10px 20px;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.addContentBottom {
+    background-color: rgb(47, 0, 255);
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addContentBottomBTN {
+    background-color: red;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    height: 50px;
+}
+
+.AddProjectTitleTextAria,
+.AddProjectDiscriptionAria {
+    width: 100%;
+    height: 70px;
+    resize: none;
+    padding: 5px;
+}
+
+.addContentBottom div {
+    margin: auto;
+    padding: 10px 20px;
+    width: 60%;
+    color: white;
+    background-color: rgb(26, 0, 143);
+}
+
+@media (max-width: 850px){
+    .AddProjectEnterName td:first-child,
+    .AddProjectEnterUserName td:first-child,
+    .AddProjectEnterLikes td:first-child,
+    .AddProjectUpload td:first-child,
+    .AddProjectEnterTitle td:first-child,
+    .AddProjectEnterDiscription td:first-child {
+        font-size: 1.1rem;
+        width: 240px;
+    }
+}
+
+@media (max-width: 683px) {
+
+    .AddProjectEnterName td:first-child,
+    .AddProjectEnterUserName td:first-child,
+    .AddProjectEnterLikes td:first-child,
+    .AddProjectUpload td:first-child,
+    .AddProjectEnterTitle td:first-child,
+    .AddProjectEnterDiscription td:first-child {
+        font-size: 1.2rem;
+        width: 240px;
+    }
+
+    .AddProjectDetailsRequire p,
+    .AddProjectEnterName td:nth-child(2) p,
+    .AddProjectEnterUserName td:nth-child(2) p,
+    .AddProjectEnterLikes td:nth-child(2) p,
+    .AddProjectUpload td:nth-child(2) p {
+        font-size: 0.9rem;
+    }
+
+    .AddProjectDetailsRequire textarea,
+    .AddProjectUpload td:nth-child(2) input,
+    .AddProjectEnterLikes td:nth-child(2) input,
+    .AddProjectEnterName td:nth-child(2) input,
+    .AddProjectEnterUserName td:nth-child(2) input {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 621px) {
+    .AddProjectLegend {
+        font-size: 1.3rem;
+    }
+
+    .AddProjectEnterName td:first-child,
+    .AddProjectEnterUserName td:first-child,
+    .AddProjectEnterLikes td:first-child,
+    .AddProjectUpload td:first-child,
+    .AddProjectEnterTitle td:first-child,
+    .AddProjectEnterDiscription td:first-child {
+        font-size: 1.1rem;
+        width: 220px;
+    }
+
+    .AddProjectDetailsRequire p,
+    .AddProjectDetailsTR p,
+    .AddProjectEnterName td:nth-child(2) p,
+    .AddProjectEnterUserName td:nth-child(2) p,
+    .AddProjectEnterLikes td:nth-child(2) p,
+    .AddProjectUpload td:nth-child(2) p {
+        font-size: 0.7rem;
+    }
+
+    .AddProjectDetailsRequire textarea,
+    .AddProjectUpload td:nth-child(2) input,
+    .AddProjectEnterLikes td:nth-child(2) input,
+    .AddProjectEnterName td:nth-child(2) input,
+    .AddProjectEnterUserName td:nth-child(2) input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .AddProjectLegend {
+        font-size: 1.1rem;
+    }
+
+    .AddProjectEnterName td:first-child,
+    .AddProjectEnterUserName td:first-child,
+    .AddProjectEnterLikes td:first-child,
+    .AddProjectUpload td:first-child,
+    .AddProjectEnterTitle td:first-child,
+    .AddProjectEnterDiscription td:first-child {
+        font-size: 0.9rem;
+        width: 180px;
+    }
+
+    .AddProjectEnterName td:nth-child(2) p,
+    .AddProjectEnterUserName td:nth-child(2) p,
+    .AddProjectEnterLikes td:nth-child(2) p,
+    .AddProjectUpload td:nth-child(2) p,
+    .AddProjectDetailsRequire p {
+        font-size: 0.6rem;
+    }
+
+    .AddProjectDetailsRequire textarea,
+    .AddProjectUpload td:nth-child(2) input,
+    .AddProjectEnterLikes td:nth-child(2) input,
+    .AddProjectEnterName td:nth-child(2) input,
+    .AddProjectEnterUserName td:nth-child(2) input {
+        font-size: 0.8rem;
+    }
+
+    #adminBTN1,
+    #adminBTN2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 393px) {
+
+    .AddProjectEnterName td:first-child,
+    .AddProjectEnterUserName td:first-child,
+    .AddProjectEnterLikes td:first-child,
+    .AddProjectUpload td:first-child,
+    .AddProjectEnterTitle td:first-child,
+    .AddProjectEnterDiscription td:first-child {
+        width: 190px;
+        padding: 0;
+    }
+
+    .AddProjectEnterName td,
+    .AddProjectEnterUserName td,
+    .AddProjectEnterLikes td,
+    .AddProjectUpload td,
+    .AddProjectEnterTitle td,
+    .AddProjectEnterDiscription td {
+        display: block;
+    }
+
+    .AddProjectEnterName td:nth-child(2) p,
+    .AddProjectEnterUserName td:nth-child(2) p,
+    .AddProjectEnterLikes td:nth-child(2) p,
+    .AddProjectUpload td:nth-child(2) p,
+    .AddProjectDetailsRequire p {
+        font-size: 0.5rem;
+    }
+
+    .AddProjectDetailsTR {
+        padding-bottom: 20px;
+    }
+
+    .AddProjectsDetailDiv table tr td {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 371px) {
+    .AddProjectLegend {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .AddProjectLoading {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 658px) {
+    .addContentTop div:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    .addContentTop div:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .addContentBottomBTN {
+        font-size: 1.1rem;
+    }
+
+    .addContentBottom div {
+        font-size: 1rem;
+        margin: auto 10px;
+    }
+}
+
+@media (max-width: 555px) {
+    .addContentTop div:nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    .addContentTop div:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .addContentBottomBTN {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        height: 30px;
+    }
+
+    .addContentBottom div {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 378px) {
+    .addContentTop div:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .addContentBottom a {
+        width: 100%;
+    }
+
+    .addContentBottomBTN {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .addContentBottom div {
+        font-size: 1rem;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .addContentBottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 312px) {
+    .addContentTop div:nth-child(2) {
+        font-size: 1.1rem;
+    }
+
+    .addContentBottom a {
+        width: 100%;
+    }
+
+    .addContentBottomBTN {
+        font-size: 0.8rem;
+    }
+
+    .addContentBottom div {
+        font-size: 0.7rem;
+    }
+
+    .addContentBottom {
+        flex-direction: column;
+    }
+
+    .addContentTop {
+        flex-direction: column;
+    }
+
+    .addContentTop div {
+        text-align: center;
+    }
+
+    .addContentTop div:nth-child(1) {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .addContentTop div:nth-child(2) {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 246px) {
+    .addContentBottom div {
+        font-size: 0.6rem;
+    }
+}
