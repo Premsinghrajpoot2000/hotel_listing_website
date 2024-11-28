@@ -8,7 +8,7 @@ function FirstProjectsDetails() {
     useEffect(() => {
         const FirstPorjectData = async () => {
             try {
-                let FirstProjectDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/getFirst`)
+                let FirstProjectDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/getFirst`)
                 setFirstProjectAllData(...FirstProjectDataGet.data)
             } catch (error) {
                 console.log(error)

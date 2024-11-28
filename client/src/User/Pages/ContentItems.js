@@ -9,7 +9,7 @@ function ContentItems() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/get`);
+            const response = await axios.get(`https://hotel-listing-website-server.onrender.com/get`);
             setContentsDatabase(response.data);
         } catch (error) {
             console.log(error);
@@ -34,7 +34,7 @@ function ContentItems() {
 
             let likes = contentsDatabase[mainId].likes
             likes += 1
-            await axios.patch(`${process.env.REACT_APP_API_URL}/patchContent/${id}`, { likes });
+            await axios.patch(`https://hotel-listing-website-server.onrender.com/patchContent/${id}`, { likes });
             event.target.disabled = true;
 
             fetchData();

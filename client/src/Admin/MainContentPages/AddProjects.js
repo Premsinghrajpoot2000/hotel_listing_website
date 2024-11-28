@@ -15,7 +15,7 @@ function AddProjects() {
 
     let PostDataBase = async (AllData) => {
         try {
-            await axios.post(`${process.env.REACT_APP_API_URL}/post`, AllData)
+            await axios.post(`https://hotel-listing-website-server.onrender.com/post`, AllData)
             await Database()
             Loading.current.className = 'AddProjectLoadingDiv'
 
@@ -29,7 +29,7 @@ function AddProjects() {
         const Database = async () => {
             try {
                 Loading.current.className = 'AddProjectLoading'
-                let FirstDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/getAdded`)
+                let FirstDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/getAdded`)
                 setGetdata1(FirstDataGet.data)
                 Loading.current.className = 'AddProjectLoadingDiv'
             } catch (error) {
@@ -41,7 +41,7 @@ function AddProjects() {
 
     const Database = async () => {
         try {
-            let FirstDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/getAdded`)
+            let FirstDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/getAdded`)
             setGetdata1(FirstDataGet.data)
         } catch (error) {
             console.log(error)
@@ -61,7 +61,7 @@ function AddProjects() {
         let ProfileLogo = ProfileLogoArray[ProfileLogoArray.length - 1].split('.')[0]
 
         try {
-            await axios.delete(`${process.env.REACT_APP_API_URL}/deleteAddedData/${ObjId}?ProjectImage=${ProjectImage}&ProfileLogo=${ProfileLogo}`)
+            await axios.delete(`https://hotel-listing-website-server.onrender.com/deleteAddedData/${ObjId}?ProjectImage=${ProjectImage}&ProfileLogo=${ProfileLogo}`)
             await Database()
             Loading.current.className = 'AddProjectLoadingDiv'
 

@@ -10,7 +10,7 @@ function ProjectsDetailsPage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`${process.env.REACT_APP_API_URL}/get`)
+                const response = await axios.get(`https://hotel-listing-website-server.onrender.com/get`)
                 setFindedData(response.data[id])
             } catch (error) {
                 console.log(error)

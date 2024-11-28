@@ -8,7 +8,7 @@ function FirstProject() {
 
     const Database = async () => {
         try {
-            let FirstDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/getFirst`)
+            let FirstDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/getFirst`)
             setGetdata(...FirstDataGet.data)
         } catch (error) {
             console.log(error)
@@ -38,7 +38,7 @@ function FirstProject() {
 
             let likes = getdata.likes
             likes += 1
-            await axios.patch(`${process.env.REACT_APP_API_URL}/patch1/${id}`, { likes });
+            await axios.patch(`https://hotel-listing-website-server.onrender.com/patch1/${id}`, { likes });
             event.target.disabled = true;
 
             Database()

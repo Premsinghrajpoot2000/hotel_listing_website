@@ -14,8 +14,8 @@ function ViewAll() {
     const fetchData = async () => {
         try {
             const response = query ?
-                await axios.get(`${process.env.REACT_APP_API_URL}/view_alll?search=${query}`) :
-                await axios.get(`${process.env.REACT_APP_API_URL}/get`);
+                await axios.get(`https://hotel-listing-website-server.onrender.com/view_alll?search=${query}`) :
+                await axios.get(`https://hotel-listing-website-server.onrender.com/get`);
 
             setContentsDatabase(response.data);
         } catch (error) {
@@ -43,7 +43,7 @@ function ViewAll() {
 
             let likes = contentsDatabase[mainId].likes
             likes += 1
-            await axios.patch(`${process.env.REACT_APP_API_URL}/patchContent/${id}`, { likes });
+            await axios.patch(`https://hotel-listing-website-server.onrender.com/patchContent/${id}`, { likes });
             event.target.disabled = true;
 
             fetchData();

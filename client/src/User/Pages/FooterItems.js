@@ -7,7 +7,7 @@ function FooterItems() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/FooterGet`);
+            const response = await axios.get(`https://hotel-listing-website-server.onrender.com/FooterGet`);
             setGetdata1(response.data);
         } catch (error) {
             console.log(error);

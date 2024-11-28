@@ -18,7 +18,7 @@ function Footer() {
         const Database = async () => {
             Loading.current.className = 'FooterLoading'
             try {
-                let FirstDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/FooterGet`)
+                let FirstDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/FooterGet`)
                 Loading.current.className = 'FooterLoadingDiv'
                 setGetdata1(FirstDataGet.data)
             } catch (error) {
@@ -30,7 +30,7 @@ function Footer() {
 
     const Database = async () => {
         try {
-            let FirstDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/FooterGet`)
+            let FirstDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/FooterGet`)
             setGetdata1(FirstDataGet.data)
         } catch (error) {
             console.log(error)
@@ -45,7 +45,7 @@ function Footer() {
 
         loading.className = 'FooterLoading'
         try {
-            await axios.delete(`${process.env.REACT_APP_API_URL}/deleteFooterAddedData/${ObjId}?ProjectImage=${ProfileImage}`)
+            await axios.delete(`https://hotel-listing-website-server.onrender.com/deleteFooterAddedData/${ObjId}?ProjectImage=${ProfileImage}`)
             loading.className = 'FooterLoadingDiv'
         } catch (error) {
             console.log(error)
@@ -54,7 +54,7 @@ function Footer() {
 
     let PostDataBase = async (AllData) => {
         try {
-            await axios.post(`${process.env.REACT_APP_API_URL}/postFooter`, AllData)
+            await axios.post(`https://hotel-listing-website-server.onrender.com/postFooter`, AllData)
             loading.className = 'FooterLoadingDiv'
         } catch (error) {
             console.log(error)

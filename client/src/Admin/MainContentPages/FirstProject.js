@@ -18,7 +18,7 @@ function FirstProject() {
     useEffect(() => {
         const Database = async () => {
             try {
-                let FirstDataGet = await axios.get(`${process.env.REACT_APP_API_URL}/getFirst`)
+                let FirstDataGet = await axios.get(`https://hotel-listing-website-server.onrender.com/getFirst`)
                 setGetdata1(...FirstDataGet.data)
             } catch (error) {
                 console.log(error)
@@ -39,7 +39,7 @@ function FirstProject() {
         let ProfileLogo = ProfileLogoArray[ProfileLogoArray.length - 1].split('.')[0]
 
         try {
-            await axios.patch(`${process.env.REACT_APP_API_URL}/patch/${ObjID}?ProjectImage=${ProjectImage}&ProfileLogo=${ProfileLogo}`, formData)
+            await axios.patch(`https://hotel-listing-website-server.onrender.com/patch/${ObjID}?ProjectImage=${ProjectImage}&ProfileLogo=${ProfileLogo}`, formData)
             Loading.current.className = 'AddProjectLoadingDiv'
         } catch (error) {
             console.log(error)
